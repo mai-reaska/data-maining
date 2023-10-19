@@ -28,6 +28,16 @@ def fun_kwargsParam(**data):
 def fun_variabel(x, y):
     return x + y
 
+# Lambda Function
+lamda_fun = lambda: print("Lambda Fuction")
+
+# Lambda have Paramater
+fun_lamParam = lambda a, b : a + b
+
+# Lambda return
+def fun_lamda(*param):
+    return lambda x : x + param
+
 # Call function have param pass value
 fun_haveParam(10, 20)
 fun_strParam('mai','reaksa')
@@ -38,3 +48,7 @@ fun_kwargsParam(f_name="reaksa", l_name="mai", age=21, email="reaksamai@rupp.edu
 call_fun = fun_variabel(1, 3)
 print(call_fun)
 
+# Call LambdaFuction
+lamda_fun()
+print(fun_lamParam(12, 34))
+pass_agrdLamda = fun_lamda(1)
